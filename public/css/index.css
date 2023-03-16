@@ -1,0 +1,94 @@
+h1 {
+	font-weight: 400;
+	padding: 0.5rem 1.5rem;
+}
+p { line-height: 1.8rem; }
+.highlight {
+	background: #e9e7e1;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 1rem 2rem 1rem 0;
+	border-top-right-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	justify-content: center;
+	align-items: center;
+}
+.highlight p {
+	padding: 0.7rem 3rem;
+	min-width: 15vw;
+	max-width: 30vw;
+	flex-shrink: 1;
+	flex-basis: 0;
+	flex-grow: 1;
+}
+img {
+	height: 30vh;
+	margin: 0.7rem 3rem;
+}
+table, td, th {
+	border: none;
+	border-collapse: collapse;
+	padding: 9px;
+	min-width: 400px;
+}
+.projeto {
+	margin: auto;
+	width: 80%;
+	display: block;
+}
+main { display: flex; }
+figure {
+	background-color: var(--d-blue);
+	border-radius: 0.5rem;
+	display: flex;
+}
+figure a {
+	text-decoration: none;
+	color: white;
+	padding: 1rem 1.5rem;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+figure p {
+	flex: 1;
+	overflow: hidden;
+	margin: 0;
+	line-height: normal;
+	color: #a6a7c7;
+}
+h3 { font-size: 12px; }
+main > * { flex: 1; }
+.projetos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content:flex-start;
+	padding: 0rem 2.5rem;
+}
+.projetos > * {
+	width: 60%;
+	min-width: 200px;
+	margin: 10px;
+	height: 22vh;
+	overflow: hidden;
+	transition: filter 170ms ease;
+}
+.projetos > *:hover { filter: drop-shadow(1px 1px 10px rgba(70, 70, 70, 0.739)); }
+figure:last-child {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+figure:last-child a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex: initial;
+}
+figure:last-child svg {
+	height: 60%;
+	width: 60%;
+}
